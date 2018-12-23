@@ -1,0 +1,162 @@
+header h1{
+  background: rgba(20,10,200,0.15);
+  padding: 10px 5%;
+}
+section{
+  padding: 5px 5%;
+  position: relative;
+  height: 85%;
+}
+section>div:nth-child(2)>span:nth-child(3){
+	border: 1px solid #FFF;
+    padding: 5px 30px;
+    float: right;
+	font-size: 1.5em;
+}
+section>div:nth-child(2)>span:nth-child(3)>span{
+	font-weight: bold;
+}
+section nav{
+  height: 80%;
+  overflow: scroll;
+  border: 1px solid #DDAAFF;
+  margin-top: 20px;
+  padding: 15px 10px;
+  background: #232233;
+}
+section nav ul li{
+  background: #660033;
+  border: 1px solid #cc0099;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+section nav ul li div:nth-child(1){
+  font-size: 1.25em;
+  color: #fff;
+}
+section nav ul li div:nth-child(3),section nav ul li div:nth-child(4){
+	font-size: 1.5em;
+	font-weight: bold;
+}
+section nav ul li div:nth-child(3){  
+  font-family: arial;
+  margin: 0 0px 5px;
+}
+section nav ul li div:nth-child(4){
+    margin-bottom: 10px;
+}
+section nav ul li div:nth-child(5){
+	font-style: italic;
+    margin-bottom: 25px;
+}
+section div select{
+  background: rgba(20,30,25,0.3);
+  color: #FFEEAA;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+section nav ul li footer:nth-child(6){
+  margin-top: 10px;
+}
+#addExpButton{
+  position: absolute;
+  bottom: 0px;
+  right: 4%;
+  background: #aa8899;
+  background-image: url(../asset/images/add-button.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 99;
+  border-radius: 50%;
+  color: #221144;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+}
+.smallButton{
+  color: #660033;
+  text-decoration: none;
+  background: #df9fbf;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+#expForm{
+  border: 5px solid #223355;
+  background: rgba(10,20,30,0.92);
+  z-index: 99;
+  top: 20%;
+  position: absolute;
+  padding: 40px 5%;
+  width: 78%;
+}
+#expForm div{
+  margin: 15px 10px;
+}
+#expForm>span:nth-child(1){
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  background: #ffffff;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 20px;
+  color: #223388;
+}
+#expForm div input, #expForm div select{
+  float: right;
+}
+#analyticsButton{
+	background: #000;
+    border: 1px solid #eef;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #3f3;
+    /* font-weight: bold; */
+}
+
+@media only screen and (max-width:800px) {
+  body{
+    background: rgb(90,120,220);
+  }
+}
+
+@media only screen and (max-width:500px) { /*for mobille-devices*/
+  body{
+    background: rgb(25,12,20);
+    color: #DDEEDD;
+  }
+  section>div:nth-child(2)>span:nth-child(3){
+	display: block;
+    float: none;
+    margin-top: 5px;
+	margin-left: 10%;
+    font-size: 1.2em;
+    padding: 5px 0;
+    text-align: center;
+    width: 80%;
+  }  
+  .dataContainer div:nth-child(3){
+    font-size: 1.5em;
+    background: #aa8899;
+    padding: 5px 15px;
+    border: 1px solid #eeffee;
+    margin: 10px 0;
+    width: 89%;
+  }
+  .dataContainer div:nth-child(4){
+    font-size: 2em;
+    color: #ffccdd;
+  }
+  .dataContainer div:nth-child(5)::before{
+    content: "Comments: ";
+  }
+  #analyticsButton{
+	  display: none;
+  }
+}

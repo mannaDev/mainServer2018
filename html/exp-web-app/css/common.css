@@ -1,0 +1,46 @@
+h1{
+    font-size: 1.8em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.3em;
+}
+.boldText{
+    font-weight: bold;
+}
+.italics{
+    font-style: italic;
+}
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
+.clearBoth{
+    clear: both;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.invisible{
+    visibility: hidden;
+}
+.hideDiv{
+    display: none;
+}
+.warningText{
+    color: #EEAA00;
+}
+.copyright{
+    color: #EEDDFF;
+}
+.cursorPointer{
+	cursor: pointer;
+}
+@font-face {
+    font-family: calculatorFont;
+    src: url(../asset/fonts/digital-7.ttf);
+}

@@ -1,0 +1,51 @@
+header h1{
+  background: rgba(20,10,200,0.15);
+  padding: 10px 5%;
+}
+section{
+  padding: 5px 5%;
+  position: relative;
+  height: 85%;
+}
+section nav{
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid #DDAAFF;
+  margin-top: 20px;
+  padding: 15px 10px;
+  background: #232233;
+}
+section nav ul li{
+  background: #660033;
+  border: 1px solid #cc0099;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+section div select{
+  background: rgba(20,30,25,0.3);
+  color: #FFEEAA;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+#addExpButton{
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+  background: #EEFFEE;
+  padding: 4%;
+  border-radius: 50%;
+  color: #221144;
+  font-weight: bold;
+}
+@media only screen and (max-width:800px) {
+  body{
+    background: rgb(90,120,220);
+  }
+}
+
+@media only screen and (max-width:500px) {
+  body{
+    background: rgb(25,12,20);
+    color: #DDEEDD;
+  }
+}

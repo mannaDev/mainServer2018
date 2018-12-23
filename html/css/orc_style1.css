@@ -1,0 +1,63 @@
+body{
+background: #fff;
+}
+header, section{
+  margin: 0px 3%;
+}
+.logo{
+  background: url("../asset/images/Oracle-Logo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+header div:nth-child(1){
+  width: 15%;
+}
+header div:nth-child(2){
+  width: 45%;
+  margin-top: 15px;
+  padding-left: 20%;
+}
+header div:nth-child(2) input{
+  padding: 3px 2.5%;
+  width: 50%;
+  border-radius: 20px;
+}
+header div:nth-child(3){
+  width: 10%;
+  margin-top: 20px;
+}
+#contentArea div{
+  width: 100%;
+}
+#contentArea div:nth-child(1){
+
+}
+#contentArea div:nth-child(2){
+  border: 1px solid #ccddff;
+  padding: 8px 0px;
+  text-align: center;
+  color: #e22e16;
+  font-weight: bold;
+}
+#contentArea textarea{
+  width: 99%;
+  height: 50px;
+  line-height: 10px;
+}
+#contentArea button{
+  margin-top: 10px;
+  width: 125px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.titleLists{
+  font-size: 18px;
+  width: 50%;
+  color: #f33;
+  font-family: sans-serif;
+  border: 1px solid #f55;
+  padding: 5px;
+  margin-bottom: 5px;
+}

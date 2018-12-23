@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Oracle - My Report</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/orc_style1.css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script type='text/javascript' src="js/orc_script_home.js"></script>
+    <script src="js/libs/require.min.js" data-main="js/require_script"></script>
+
+<!--
+      TO-DO TASKS
+      1. MERGE KO AND REQUIRE.JS FROM OFFICE PC
+      2. CREATE MODULES ACCORDINGLY
+-->
+
+  </head>
+  <body>
+    <header>
+      <div class = "logo floatLeft"></div>
+      <div class = "floatLeft">
+        <input type="text" name = "searchKeyword" placeholder="Search..."/>
+      </div>
+      <div class="floatRight">
+        <span id="date_var">
+          DD
+        </span>
+        <span id="month_var">MM</span>
+        <span id="year_var">YYYY</span>
+      </div>
+    </header>
+    <section class = "clearBoth" id="contentArea">
+      <div>
+        <ul id="titleListContainer"></ul>
+        <textarea></textarea>
+
+      </div>
+      <div class="onHovercursorPointer">+ Add More</div>
+      <button class="onHovercursorPointer" onclick="saveData(89)">SAVE</button>
+      https://devilram.co/getProjectData
+    </section>
+  </body>
+</html>

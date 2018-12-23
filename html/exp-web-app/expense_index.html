@@ -1,0 +1,30 @@
+<!DOCTYYPE html>
+<html>
+  <head>
+    <title>Trial</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/expense_style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/expense_script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dummy Head</h1>
+    </header>
+    <section ng-app="mannApp" ng-controller="mainController">
+      <h2>Select Period</h2>
+      <div>
+        <select ng-model="selectedMonth" ng-options="x for x in months"></select>
+        <select ng-model="selectedYear" ng-options="x for x in years"></select>
+      </div>
+      <nav>
+        <ul>
+          <li ng-repeat="data in months">{{data}}</li>
+        </ul>
+      </nav>
+      <div id="addExpButton">+</div>
+    </section>
+  </body>
+</html>

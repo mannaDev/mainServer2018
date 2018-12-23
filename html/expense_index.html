@@ -1,0 +1,64 @@
+<!DOCTYYPE html>
+<html>
+  <head>
+    <title>Exp Trkr</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/jquery-ui.css" rel="stylesheet"/>
+    <link href="css/expense_style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/expense_script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Expenses</h1>
+    </header>
+    <section ng-app="mannApp" ng-controller="mainController">
+      <h2>Select Period</h2>
+      <div>
+        <select ng-model="selectedMonth" ng-options="x for x in months" ng-change="getMonthWiseExpense()"></select>
+        <select ng-model="selectedYear" ng-options="x for x in years"></select>
+		<span>Month_Total: <span class="amountFormat">{{month_total}}</span></span>
+      </div>
+      <nav>
+        <ul>
+          <li ng-repeat="data in expenseData" class="dataContainer">
+            <div class="floatLeft">{{data.month}}</div>
+            <div class="floatRight">{{data.exp_date}}</div>
+            <div class="clearBoth floatLeft">{{data.exp_title}}</div>
+            <div class="clearBoth amountFormat">{{data.amount}}</div>
+            <div>{{data.comment}}</div>
+            <footer>
+              <div class="floatLeft"><a href="#" class="smallButton" ng-click="updateExpense(data._id)">Edit</a></div>
+              <div class="floatRight"><a href="#" class="smallButton" ng-click="deleteExp(data._id)">Delete</a></div>
+            </footer>
+          </li>
+        </ul>
+      </nav>
+      <div id="addExpButton" ng-click="showExpForm=!showExpForm" ng-hide="showExpForm"></div>
+	  <button id="analyticsButton">STATISTICS</button>
+      <aside id="expForm" ng-show="showExpForm">
+        <span class="floatRight" ng-click="clearForm(); showExpForm=!showExpForm">X</span>
+        <div>Date:
+          <input type = "text" id = "expDate"/>
+        </div>
+        <div class="clearBoth">Item:
+          <input type = "text" id = "expItem"/>
+        </div>
+        <div class="clearBoth">Amount:
+          <input type = "number" id = "expAmount"/>
+        </div>
+        <div class="clearBoth">MOT:
+          <select ng-model="selectedMOP" ng-options="x for x in MOP"></select>
+        </div>
+        <div class="clearBoth">Comment:
+          <input type = "text" id = "expComment"/>
+        </div>
+        <button ng-click="submitExp(); showExpForm=false">SUBMIT</button>
+      </aside>
+    </section>
+  </body>
+</html>
